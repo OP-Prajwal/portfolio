@@ -21,7 +21,7 @@ body {
       transform: scale(1);
     }
   }
-   span {
+  span {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
@@ -45,7 +45,7 @@ body {
       opacity: 1;
       filter: blur(0);
     }
-  } 
+  }
 
 
 
@@ -109,4 +109,118 @@ body {
 name h2{
 text-align: center;
 }
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  margin-left: 50px;
+ background-color: white;
+    
+  }
+  h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(4){
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11,0,0.5,0);
+  }
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+
+
+.nav1{
+  
+    margin:0;
+    padding: 10px;
+   
+}
+.nav1 ul{
+   
+  text-decoration: none;
+    list-style: none;
+    display: flex;
+
+  justify-content: space-around;
+   
+}
+.nav1 li{
+    font-size: larger;
+    display: inline;
+   padding: 20px 10px;
+   background-color:white;  
+ text-decoration: none;
+   
+}
+.nav1 a{
+    text-decoration: none;
+    position: relative;
+}
+.nav1 a::after{
+    content: "";
+    position:absolute;
+    height:3px;
+    width:100%;
+    bottom:0;
+    left:0;
+    background:blue;
+    transform:scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav1 a:hover:after{
+    transform:scaleX(1);
+}
+
+.info{
+  display: flex;
+  align-items: center;
+}
+.info img {
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  padding: 40px;
+  transform: scale(0);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  position: relative;
+}
+
+name h2{
+text-align: center;
+}
+
+
 
