@@ -21,7 +21,7 @@ body {
       transform: scale(1);
     }
   }
-  /* span {
+   span {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
@@ -45,7 +45,7 @@ body {
       opacity: 1;
       filter: blur(0);
     }
-  } */
+  } 
 
 
 
